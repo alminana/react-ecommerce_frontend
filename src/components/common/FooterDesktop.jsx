@@ -3,7 +3,47 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Apple from '../../assets/images/apple.png'
 import Google from '../../assets/images/google.png'
+import axios from 'axios
 export class FooterDesktop extends Component {
+
+  constructor(){
+    super();
+    this.state={
+         address:"",
+         android_app_link:"",
+         ios_app_link:"",
+         facbook_link:"",
+         twitter_link:"",
+         instagram_link:"",
+         copyright_text:"", 
+         loaderDiv:"",
+         mainDiv:"d-none"
+    }
+}
+
+componentDidMount(){
+  axios.get(AppURL.AllSiteInfo).then(response =>{
+       let StatusCode = response.status;
+       if(StatusCode==200){
+            let JsonData = (response.data)[0];
+            this.setState({
+                 address:JsonData['address'],
+                 android_app_link:JsonData['android_app_link'],
+                 ios_app_link:JsonData['ios_app_link'],
+                 facbook_link:JsonData['facbook_link'],
+                 twitter_link:JsonData['twitter_link'],
+                 instagram_link:JsonData['instagram_link'],
+                 copyright_text:JsonData['copyright_text'], 
+                 loaderDiv:"d-none",
+                 mainDiv:""
+            });
+       } 
+
+  }).catch(error=>{
+
+  });
+}
+
   render() {
     return (
       <Fragment>

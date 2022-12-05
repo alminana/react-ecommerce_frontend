@@ -6837,6 +6837,11 @@
   dependencies:
     "find-up" "^3.0.0"
 
+"placeholder-loading@^0.6.0":
+  "integrity" "sha512-KdUnwa3AEuXlem7QeSi4qtny+QfiACUh0P0iYskJBwfg3LtAUMQFyd9L21ysdBQ65KbK6tZ4VsKPkcF3mULwMQ=="
+  "resolved" "https://registry.npmjs.org/placeholder-loading/-/placeholder-loading-0.6.0.tgz"
+  "version" "0.6.0"
+
 "postcss-attribute-case-insensitive@^5.0.2":
   "integrity" "sha512-XIidXV8fDr0kKt28vqki84fRK8VW8eTuIa4PChv2MqKuT6C9UjmSKzen6KaWhWEoYvwxFCa7n/tC1SZ3tyq4SQ=="
   "resolved" "https://registry.npmjs.org/postcss-attribute-case-insensitive/-/postcss-attribute-case-insensitive-5.0.2.tgz"
@@ -7804,10 +7809,10 @@
     "lodash.debounce" "^4.0.8"
     "resize-observer-polyfill" "^1.5.0"
 
-"react-toastify@^8.0.0":
-  "integrity" "sha512-7a5uhwbJ5Ivp5QyJN8P9M8g+7wksJt51QuYAZW0c3pDOh0Jx8lH7XzNHzzJg4NHup9n4zcqH9rwXknnyzYg2OA=="
-  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-8.0.0.tgz"
-  "version" "8.0.0"
+"react-toastify@^8.2.0":
+  "integrity" "sha512-Pg2Ju7NngAamarFvLwqrFomJ57u/Ay6i6zfLurt/qPynWkAkOthu6vxfqYpJCyNhHRhR4hu7+bySSeWWJu6PAg=="
+  "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-8.2.0.tgz"
+  "version" "8.2.0"
   dependencies:
     "clsx" "^1.1.1"
 
